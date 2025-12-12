@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Portfolio '25 </title>
+<!-- Embedded or Global Style -->
+<style>
+	@font-face {
+		font-family: Georgia;
+        src: url("Georgia.ttf");
+    } @font-face {
+        font-family: Ghosthey;
+        src: url("ghosthey-Regular.ttf");
+	} #page {
+		width: 1024px;
+        max-width: 95%;
+		height: 1224px;
+		background: #0F0A12;
+		border: 1px solid #9003E4; 
+		margin: 0 auto;
+		padding: 48px;
+		box-shadow: 2px 3px 6px #8C00FF;
+	} h1 { 
+		font: 48pt/1.0em Ghosthey;
+		text-align: center;
+		width: 80%
+		font: 48pt/0.9em 'ghosthey';
+		color: #8C00FF;
+	} h2 {
+		font: 18pt/2.4em Georgia;
+		text-align: center;
+		color: white;
+	} p { 
+		font: 14pt/1.4em Georgia, serif;
+   	 	width: 100%;
+        max-width: 95%;
+		color: white; 
+		margin: 48px auto;
+	} #banner {
+		width: 100%;
+		float: none;
+		border: none;
+		box-shadow: none;
+		margin: auto; 
+    } button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #8C00FF;
+        border: 1px solid gray;
+        display: block;
+		color: white;
+    } #cat {
+		position: relative;
+		left; 10px;
+		animation-name: letsgo;
+		animation-duration: 6s;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-in;
+		animation-play-state: paused;
+	} #cat: active {
+		animation-play-state: running;
+	} @keyframes letsgo {
+		0% {left: 10px}
+		100% {left: 120vw;}
+    }
+</style>
+</head>
+
+<body>
+<div id="page">
+  <img id="banner" src="images/IMG_4726.JPG" alt="GRC" /> 
+	
+	
+<h1> Shalom Smith </h1>
+<h2> GRC 365-1005 </h2>
+	
+<p> Hellooooo! Welcome to my portfolio page for GRC 365.  I want to showcase my work for school and personal here. This is my first time coding, so please excuse any mistakes. :) </p>
+	
+<button onClick="document.getElementById('cat').style.animationPlayState='running';">Go!</button>
+
+<img src="c7ee958d22c1f9158f79f5205b46ee9a.png" alt="cat" width="242" height="203" id="cat" />
+</div>
+</body>
+</html>
